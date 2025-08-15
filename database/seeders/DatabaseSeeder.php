@@ -42,10 +42,10 @@ class DatabaseSeeder extends Seeder
             // Mode kecil untuk local/tester 
             // Ditandai dengan isi file env    APP_ENV=local. 
             // Kalau seandainya nge tes di laptop pribadi
-            Author::factory(20)->create();
-            Category::factory(60)->create();
-            Book::factory(1000)->create();
-            Rating::factory(3000)->create();
+            Author::factory(200)->create();
+            Category::factory(600)->create();
+            Book::factory(20000)->create();
+            Rating::factory(100000)->create();
         }
     }
 }
