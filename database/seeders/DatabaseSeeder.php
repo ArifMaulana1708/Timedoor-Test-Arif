@@ -17,10 +17,10 @@ class DatabaseSeeder extends Seeder
      */
     public function run(): void
     {
-        Author::factory(20)->create();
-        Category::factory(60)->create();
-        Book::factory(2000)->create();
-        Rating::factory(10000)->create();
+        Author::factory(1000)->create();
+        Category::factory(3000)->create();
+        Book::factory(100000)->create();
+        Rating::factory(500000)->create();
 
         User::factory()->create([
             'name' => 'Test User',
