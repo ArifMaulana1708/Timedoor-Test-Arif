@@ -71,6 +71,17 @@
 
 <body>
 
+    <div style="margin-bottom: 1rem;">
+        <a href="{{ url('/') }}">
+            <button type="button">📚 Book</button>
+        </a>
+        <a href="{{ url('/author') }}">
+            <button type="button">✍ Author</button>
+        </a>
+        <a href="{{ url('/rating/create') }}">
+            <button type="button">⭐ Create Rating</button>
+        </a>
+    </div>
     <form method="GET" action="{{ url('/book') }}">
         <label>List shown :</label>
         <select name="limit">
