@@ -11,8 +11,8 @@ Project ini adalah sistem buku + rating dengan Laravel, MySQL, dan seeder data b
 2. **Install Dependencies**
    composer install
 
-3. **Rename .env dan konfigurasi**
-   rename .env.example menjadi .env
+3. **copy.env dan konfigurasi**
+   cp .env.example .env
    kemudian ubah :
    DB_CONNECTION=mysql
    DB_HOST=127.0.0.1
@@ -26,6 +26,7 @@ Project ini adalah sistem buku + rating dengan Laravel, MySQL, dan seeder data b
 
 5. **Migrate & seed database**
    php artisan migrate
+   jika db belum ada bisa di "yes" kan kalo
    php artisan db:seed
 
 6. **Run Project**
